@@ -19,7 +19,7 @@ const AddShop = () => {
         opening: data.openingDate,
         closingDate: data.closingDate
       }
-      const url = `http://localhost:5002/addShop`
+      const url = `https://evening-dusk-79824.herokuapp.com/addShop`
       console.log(eventData)
 
       fetch(url, {

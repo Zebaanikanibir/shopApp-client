@@ -16,7 +16,7 @@ export const listShops = () => {
 
                 type: GET_SHOP_REQUEST
             })
-            const { data } = await axios.get('http://localhost:5002/shop')
+            const { data } = await axios.get('https://evening-dusk-79824.herokuapp.com/shop')
             console.log('data', data)
             dispatch({
 
@@ -34,7 +34,7 @@ export const listShops = () => {
 
 }
 export const deleteShops = id => dispatch => {
-    fetch(`http://localhost:5002/${id}`, {
+    fetch(`https://evening-dusk-79824.herokuapp.com/${id}`, {
       method: "DELETE"
     })
       .then(res => res.json())
