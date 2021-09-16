@@ -1,0 +1,33 @@
+.shop-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+.add-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    width: 80%;
+    margin: auto;
+}
+.search-box{
+    margin-top: 80px;
+}
+.search-box input{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+}
+@media (max-width: 768px){
+
+    .shop-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+}
